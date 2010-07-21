@@ -7,7 +7,8 @@ plugins = {
   'vim-rails' => 'http://github.com/tpope/vim-rails.git',
   'vim-fugitive' => 'http://github.com/tpope/vim-fugitive.git',
   'vim-surround' => 'http://github.com/tpope/vim-surround.git',
-  'vim-markdown' => 'http://github.com/tpope/vim-markdown.git'
+  'vim-markdown' => 'http://github.com/tpope/vim-markdown.git',
+  'nerdtree' => 'http://github.com/scrooloose/nerdtree.git'
 }
 
 #Download the plugins using git 
