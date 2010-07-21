@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby -w
+
+#list of plugins to install 
+plugins = {
+  'snipmate' => 'http://github.com/msanders/snipmate.vim.git',
+  'vim-endwise' => 'http://github.com/tpope/vim-endwise.git',
+  'vim-rails' => 'http://github.com/tpope/vim-rails.git',
+  'vim-fugitive' => 'http://github.com/tpope/vim-fugitive.git',
+  'vim-surround' => 'http://github.com/tpope/vim-surround.git',
+  'vim-markdown' => 'http://github.com/tpope/vim-markdown.git'
+}
+
+#Download the plugins using git 
+plugins.each  do |name, address|
+  installed_plugins = `ls ~/.vim/bundle`
+  system("git clone #{address} ~/.vim/bundle/#{name}") unless installed_plugins.include? name
+end
