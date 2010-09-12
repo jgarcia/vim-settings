@@ -48,9 +48,10 @@ set expandtab                    " Use spaces instead of tabs
 set laststatus=2                  " Show the status line all the time
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
-
-" Or use vividchalk
 colorscheme vibrantink
+
+
+let maplader = ','                "Change the default leader key to coma    
 
 " Tab mappings.
 map <leader>tt :tabnew<cr>
@@ -69,6 +70,7 @@ vmap <S-Tab> <gv
 nmap <S-Tab> <C-W><C-W>
 " Uncomment to use Jamis Buck's file opening plugin
 "map <Leader>t :FuzzyFinderTextMate<Enter>
+"
 
 " Controversial...swap colon and semicolon for easier commands
 "nnoremap ; :
@@ -82,6 +84,6 @@ autocmd FileType ruby setlocal foldmethod=syntax
 autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
 
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
-autocmd BufNewFile,BufRead *_spec.rb compiler rspec
+" autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 
 
