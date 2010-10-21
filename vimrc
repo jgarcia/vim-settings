@@ -51,7 +51,7 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*Cap
 colorscheme vibrantink
 
 
-let maplader = ','                "Change the default leader key to coma    
+let mapleader = ','                "Change the default leader key to coma    
 
 " Tab mappings.
 map <leader>tt :tabnew<cr>
