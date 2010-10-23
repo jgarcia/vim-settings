@@ -1,0 +1,46 @@
+#This is where we will add all the plugins
+#Every plugin has:
+#name, fetch_type, source
+#currently only svn and git are supported :D ...
+options:
+  plugins:
+    plugin:
+      name: 'snipmate'
+      fetch_type: 'git'
+      source: 'http://github.com/msanders/snipmate.vim.git'
+    plugin:
+      name: 'vim-endwise'
+      fetch_type: 'git'
+      source: 'http://github.com/tpope/vim-endwise.git'
+    plugin:
+      name: 'vim-rails'
+      fetch_type: 'git'
+      source: 'http://github.com/tpope/vim-rails.git'
+    plugin:
+      name: 'vim-fugitive'
+      fetch_type: 'git'
+      source: 'http://github.com/tpope/vim-fugitive.git'
+    plugin:
+      name: 'vim-surround'
+      fetch_type: 'git'
+      source: 'http://github.com/tpope/vim-surround.git'
+    plugin:
+      name: 'vim-markdown'
+      fetch_type: 'git'
+      source: 'http://github.com/tpope/vim-markdown.git'
+    plugin:
+      name: 'nerdtree'
+      fetch_type: 'git'
+      source: 'http://github.com/scrooloose/nerdtree.git'
+    plugin:
+      name: 'vim-haml'
+      fetch_type: 'git'
+      source: 'http://github.com/tpope/vim-haml.git'
+    plugin:
+      name: 'vim-cucumber'
+      fetch_type: 'git'
+      source: 'http://github.com/tpope/vim-cucumber.git'
+    plugin:
+      name: 'vim-ruby'
+      fetch_type: 'git'
+      source: 'http://github.com/vim-ruby/vim-ruby.git'
