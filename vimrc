@@ -70,7 +70,9 @@ vmap <S-Tab> <gv
 nmap <S-Tab> <C-W><C-W>
 " Uncomment to use Jamis Buck's file opening plugin
 "map <Leader>t :FuzzyFinderTextMate<Enter>
-"
+
+map <leader>nt :NERDTreeToggle
+map <leader>nh set nohls
 
 " Controversial...swap colon and semicolon for easier commands
 "nnoremap ; :
