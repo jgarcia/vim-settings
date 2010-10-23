@@ -8,10 +8,10 @@ task :default => :setup
 
 desc 'Installs all plugins found in config/options.yml'
 task :setup do
-  options = YAML.load_file('config/options.yml')
+  options = YAML.load_file('./config/options.yml')["options"]
   system("mkdir bundle")
   plugins = options["plugins"]
-  plugins do |plugin|
+  plugins.each do |plugin|
     fetch(plugin) unless installed_plugins.include? plugin["name"]
   end
 end
@@ -19,7 +19,7 @@ end
 desc 'Updates plugins to latest version'
 task :update do
   plugins = options["plugins"]
-  installed_plugins do |plugin|
+  installed_plugins.each do |plugin|
     update(plugin)
   end
 end
