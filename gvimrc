@@ -10,7 +10,7 @@ set lines=25 columns=100         " Window dimensions.
 
 set guioptions-=r                 " Don't show right scrollbar
 
-if has("gui_macvim")
+if has("gui_macvim")              "PeepOpen Stuff 
  macmenu &File.New\ Tab key=<nop>
  map <D-t> <Plug>PeepOpen
 end

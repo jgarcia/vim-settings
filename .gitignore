@@ -1,3 +1,5 @@
 doc
 bundle
 .netrwhist
+*.*.swp
+/**/*.*.swp
