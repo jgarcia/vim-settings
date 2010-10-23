@@ -71,8 +71,8 @@ nmap <S-Tab> <C-W><C-W>
 " Uncomment to use Jamis Buck's file opening plugin
 "map <Leader>t :FuzzyFinderTextMate<Enter>
 
-map <leader>nt :NERDTreeToggle
-map <leader>nh set nohls
+map <leader>nt :NERDTreeToggle<cr>
+map <leader>nh :nohls<cr>
 
 " Controversial...swap colon and semicolon for easier commands
 "nnoremap ; :
@@ -87,5 +87,3 @@ autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
 
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
 " autocmd BufNewFile,BufRead *_spec.rb compiler rspec
-
-
