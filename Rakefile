@@ -18,6 +18,7 @@ end
 
 desc 'Updates plugins to latest version'
 task :update do
+  options = YAML.load_file('./config/options.yml')["options"]
   plugins = options["plugins"]
   installed_plugins.each do |plugin|
     update(plugin)

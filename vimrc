@@ -43,33 +43,17 @@ set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
 " UNCOMMENT TO USE
 set tabstop=2                    " Global tab width.
 set shiftwidth=2                 " And again, related.
-set expandtab                    " Use spaces instead of tabs
+" set expandtab                    " Use spaces instead of tabs
 
 set laststatus=2                  " Show the status line all the time
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
-colorscheme vibrantink
 
 
 let mapleader = ','                "Change the default leader key to coma    
 
-" Tab mappings.
-map <leader>tt :tabnew<cr>
-map <leader>te :tabedit
-map <leader>tc :tabclose<cr>
-map <leader>to :tabonly<cr>
-map <leader>tn :tabnext<cr>
-map <leader>tp :tabprevious<cr>
-map <leader>tf :tabfirst<cr>
-map <leader>tl :tablast<cr>
-map <leader>tm :tabmove
-imap <Tab> <C-N>
-imap <S-Tab> <C-P>
-vmap <Tab> >gv
-vmap <S-Tab> <gv
-nmap <S-Tab> <C-W><C-W>
-" Uncomment to use Jamis Buck's file opening plugin
-"map <Leader>t :FuzzyFinderTextMate<Enter>
+set t_Co=256
+color vividchalk
 
 map <leader>nt :NERDTreeToggle<cr>
 map <leader>nh :nohls<cr>

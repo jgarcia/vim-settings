@@ -5,6 +5,10 @@
 options:
   plugins:
     - plugin:
+      name: 'vividchalk'
+      fetch_type: 'git'
+      source: 'git://github.com/tpope/vim-vividchalk.git'
+    - plugin:
       name: 'snipmate'
       fetch_type: 'git'
       source: 'http://github.com/msanders/snipmate.vim.git'
@@ -33,6 +37,10 @@ options:
       fetch_type: 'git'
       source: 'http://github.com/scrooloose/nerdtree.git'
     - plugin:
+      name: 'nerdcommenter'
+      fetch_type: 'git'
+      source: 'http://github.com/scrooloose/nerdcommenter.git'
+    - plugin:
       name: 'vim-haml'
       fetch_type: 'git'
       source: 'http://github.com/tpope/vim-haml.git'
@@ -52,3 +60,19 @@ options:
       name: 'AutoClose'
       fetch_type: 'git'
       source: 'http://github.com/vim-scripts/AutoClose.git'
+    - plugin:
+      name: 'FuzzyFinder'
+      fetch_type: 'git'
+      source: 'git://github.com/itspriddle/vim-fuzzyfinder-pathogen.git'
+    - plugin:
+      name: 'tabular'
+      fetch_type: 'git'
+      source: 'https://github.com/godlygeek/tabular.git'
+    - plugin:
+      name: 'vim-coffee-script'
+      fetch_type: 'git'
+      source: 'https://github.com/kchmck/vim-coffee-script.git'
+    - plugin:
+      name: 'coffeeScript-VIM-Snippets'
+      fetch_type: 'git'
+      source: 'git://github.com/carlosvillu/coffeScript-VIM-Snippets.git'
