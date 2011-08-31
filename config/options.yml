@@ -76,3 +76,7 @@ options:
       name: 'coffeeScript-VIM-Snippets'
       fetch_type: 'git'
       source: 'git://github.com/carlosvillu/coffeScript-VIM-Snippets.git'
+    - plugin:
+      name: 'vim-colors-solarized'
+      fetch_type: 'git'
+      source: 'https://github.com/altercation/vim-colors-solarized.git'

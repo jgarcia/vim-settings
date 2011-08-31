@@ -1,12 +1,15 @@
 " Example Vim configuration.
 " Copy or symlink to ~/.vimrc or ~/_vimrc.
 
+"General settings
 set nocompatible                  " Must come first because it changes other options.
 
-silent! call pathogen#runtime_append_all_bundles()
+silent! call pathogen#runtime_append_all_bundles()	
 
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
+
+let mapleader = 'º'                "Change the default leader key to coma    
 
 runtime macros/matchit.vim        " Load the matchit plugin.
 
@@ -40,34 +43,28 @@ set nobackup                      " Don't make a backup before overwriting a fil
 set nowritebackup                 " And again.
 set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
 
-" UNCOMMENT TO USE
 set tabstop=2                    " Global tab width.
 set shiftwidth=2                 " And again, related.
-" set expandtab                    " Use spaces instead of tabs
 
 set laststatus=2                  " Show the status line all the time
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
 
-let mapleader = ','                "Change the default leader key to coma    
-
+" Color settings
 set t_Co=256
-color vividchalk
+colorscheme vividchalk
 
-map <leader>nt :NERDTreeToggle<cr>
-map <leader>nh :nohls<cr>
+" Custom mappings 
+" Displays a file tree for the current pwd
+map <leader>nt :NERDTree<cr>			
+" Removes highlighting on the search results
+map <leader>nh :nohls<cr> 
+" Brings up this file
+map <leader>, :e ~/.vimrc<cr>
 
-" Controversial...swap colon and semicolon for easier commands
-"nnoremap ; :
-"nnoremap : ;
-
-"vnoremap ; :
-"vnoremap : ;
 
 " Automatic fold settings for specific files. Uncomment to use.
 autocmd FileType ruby setlocal foldmethod=syntax
 autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
-
-" For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
-" autocmd BufNewFile,BufRead *_spec.rb compiler rspec
+autocmd FileType javascript setlocal foldmethod=syntax shiftwidth=4 tabstop=4
